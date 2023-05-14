@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <form>
+           <fieldset>
+               <legend>Campos de um cadastro ...</legend>
+               <label for="nome">Nome: </label>
+               <input type="text" name="nome" id="nome" />
+               <label for="sobrenome">Sobrenome: </label>
+               <input type="text" name="sobrenome" id="sobrenome" />
+               <input type="button" value="exibir" onclick="salvar()" />
+            </fieldset>
+        </form>
+        <script type="text/javascript">
+            function salvar(){
+                var nome = document.getElementById('nome').value;
+                var sobrenome = document.getElementById('sobrenome').value;
+                alert('O nome digitado foi ' + sobrenome + " " + nome);
+            }
+        </script>
+    </body>
+</html>

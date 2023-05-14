@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Atividade Avaliativa</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Calcular fuso horário</legend>
+        <div>
+          <label for="posInicial">Posição Inicial</label>
+          <br/>
+          <input type="text" id="posInicial" />
+        </div>
+        <input type="button" value="Calcular" onclick="Calcular()" />
+      </fieldset>
+    </form>
+  </body>
+  <script type="text/javascript">
+    function Calcular(){
+      var velocidade = 15;
+      var tempo = 10;
+      var posInicial = parseFloat(document.getElementById('posInicial').value);
+      if(posInicial == ''){
+        alert('O valor da posição inicial não pode ser vazio');
+        return;
+      }
+      var posFinal = posInicial + velocidade * tempo;
+      alert('O valor da posição final é: ' + posFinal)
+    }
+  </script>
+</html>

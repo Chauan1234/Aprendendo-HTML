@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Área da Circunferência</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Calcular área da circunferência</legend>
+        <div>
+          <label for="raio">Raio</label>
+          <br/>
+          <input type="text" id="raio" />
+        </div>
+        <input type="button" value="Calcular" onclick="Calcular()" />
+      </fieldset>
+    </form>
+  </body>
+  <script type="text/javascript">
+    function Calcular() {
+      var pi = 3.14;
+      var raio = parseFloat(document.getElementById('raio').value);
+      if (raio == ''){
+        alert('O valor do raio não pode ser vazio');
+        return;
+      }
+      var area = pi * (raio * raio);
+      alert('O valor da área é ' + area)
+    }
+  </script>
+</html>

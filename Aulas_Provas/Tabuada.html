@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tábuada</title>
+</head>
+<body>
+  <h1><span style="color: rgb(253, 5, 5);">Tábuada</span></h1>
+  <form>
+    <fieldset>
+    <legend><span style="color: rgb(102, 183, 156);">Calcular</span></legend>
+    <br>
+      <div>
+        <label for="numero">Digite um número</label>
+        <br>
+        <input type="text" id="numero" />
+      </div>
+      <input type="button" value="Calcular" onclick="Calcular()" />
+    </fieldset>
+  </form>
+</body>
+<script type="text/javascript">
+  function Calcular(){
+    var resul;
+    var numero = parseFloat(document.getElementById('numero').value);
+    if(numero == ''){
+      alert('O valor não pode ser vazio')
+      return;
+    }
+    for(i = 1; i <= 10; i++){
+      resul = numero * i;
+        document.write(numero  + ' x ' + i + ' = ' + resul + '<br>');
+    }
+  }
+</script>
+</html>
