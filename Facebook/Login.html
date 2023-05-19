@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta name="Chauan" content="Feito por Chauan">
-    <title>Facebook</title>
+    <title>Entrar no Facebook</title>
 </head>
 <body>
     <h1><span style="color: dodgerblue;">facebook</span></h1>
@@ -22,7 +22,7 @@
             </div>
             <input type="button" value="Entrar" style="background-color: dodgerblue; color: white;" onclick="Login()" /><br>
 
-            <span style="color: dodgerblue;">Esqueceu a conta?</span>
+            <a href="EsqueceuConta.html"><span style="color: dodgerblue;">Esqueceu a conta?</span></a>
             <h5>----------- ou -----------</h5>
             <input type="button" value="Criar nova conta" style="background-color: rgb(116, 192, 40); color: white;" onclick="NovaConta()" />
         </fieldset>
@@ -39,7 +39,7 @@
         alert('E-mail/Telefone: ' + emailtelefone + '\nSenha: ' + senha + '\nO login foi concluido');
     }
     function NovaConta(){
-        window.location.href = "FacebookCadastro.html";
+        window.location.href = "Cadastro.html";
     }
 </script>
 </html>
