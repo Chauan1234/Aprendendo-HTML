@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta name="Chauan" content="Feito por Chauan">
+    <title>Esqueci a senha | Não consigo entrar | Facebook</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h2>Encontre sua conta</h2>
+            <p>
+                Insira seu email ou número de celular para procurar a sua conta.
+            </p>
+            <br>
+            <label for="emailtelefone">Email ou número de celular</label>
+            <input type="text" id="emailtelefone" />
+            <br><br>
+
+            <input type="button" value="Cancelar" style="background-color: rgb(233, 233, 233);" onclick="cancelar()" />
+            <input type="button" value="Pesquisar" style="background-color: dodgerblue; color: white;" onclick="pesquisar()" />
+        </fieldset>
+    </form>
+</body>
+<script type="text/javascript">
+    function cancelar(){
+        window.location.href = "Login.html";
+    }
+    function pesquisar(){
+        var emailtelefone = document.getElementById('emailtelefone').value;
+        if(emailtelefone == ''){
+            alert('Preencha o campo anterior para prosseguir com a recuperação da conta');
+            return;
+        }
+        alert('Um e-mail ou SMS foi enviado.');
+    }
+</script>
+</html>

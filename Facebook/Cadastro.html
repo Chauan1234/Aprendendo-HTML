@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta name="Chauan" content="Feito por Chauan">
+    <title>Cadastre-se no Facebook | Facebook</title>
+</head>
+<body>
+    <h1><span style="color: dodgerblue;">facebook</span></h1>
+    <form>
+        <fieldset>
+            <h2>Criar uma nova conta</h2>
+            <h6><span style="color: rgb(163, 163, 163);">É rápido e fácil.</span></h6>
+            <br>
+
+            <div>
+                <label for="nome">Nome</label> 
+                <input type="text" id="nome" />
+
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" />
+                <br><br>
+
+                <label for="emailtelefone">Celular ou email</label>
+                <input type="text" id="emailtelefone" />
+                <br><br>
+
+                <label for="genero">Gênero</label>
+                <input type="text" id="genero" />
+                <br>
+            </div>
+            <h6>
+                <span style="color: rgb(163, 163, 163);"> 
+                    As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o Facebook. 
+                        <a href="SaibaMais.html"><span style="color: rgb(56, 124, 192);">Saiba mais</span></a>
+                        <br><br>
+                    Ao clicar em Cadastre-se, você concorda com nossos 
+                        <span style="color: rgb(56, 124, 192);"> Termos, Política de Privacidade</span> 
+                    e 
+                        <span style="color: rgb(56, 124, 192);">Política de Cookies</span>
+                    . Você poderá receber notificações por SMS e cancelar isso 
+                    quando quiser.
+                </span>
+            </h6>
+            
+            <input type="button" value="Cadastre-se" style="background-color: rgb(116, 192, 40); color: white;" onclick="CadastroEfetuado()" />
+            
+            <a href="Login.html"><h6><span style="color: dodgerblue;">Já tem uma conta?</span></h6></a>
+        </fieldset>
+    </form>
+</body>
+<script type="text/javascript">
+    function CadastroEfetuado(){
+        var nome = document.getElementById('nome').value, sobrenome = document.getElementById('sobrenome').value, emailtelefone = document.getElementById('emailtelefone').value 
+        var genero = document.getElementById('genero').value
+        if(nome == '' || sobrenome == '' || emailtelefone == '' || genero == ''){
+            alert("Preencha os campos de cadastro anteriores para prosseguir.");
+            return;
+        }
+        alert("Nome: " + nome + " " + sobrenome + "\nE-mail ou telefone: " + emailtelefone + "\nGênero: " + genero + "\nO Cadastro foi concluido");
+    }
+</script>
+</html>
