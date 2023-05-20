@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <title>Tabela</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Lista de aluno</legend>
+    <label for="aluno">Digite nome do Aluno</label>
+    <input type="text" id="aluno" />
+    <br>
+    <label for="turma">Digite turma do Aluno</label>
+    <input type="text" id="turma" />
+    <br>
+    <input type="button" value="Adicionar" onclick="adicionar()"/>
+  </fieldset>
+  <br><br>
+
+  <table border="1" width="100%">
+    <tr>
+      <th>#</th>
+      <th>Aluno</th>
+      <th>Turma</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Chauan</td>
+      <td>2-54</td>
+    </tr>
+  </table>
+  <script type="text/javascript">
+  var codigo = 2;
+    function adicionar(){
+      
+      var aluno = document.getElementById('aluno').value;
+      var turma = document.getElementById('turma').value;
+      
+
+      var tr = document.createElement('tr');
+      var td_codigo = document.createElement('td');
+      var td_aluno = document.createElement('td');
+      var td_turma = document.createElement('td');
+
+      document.getElementsByTagName('table') [0].append(tr);
+        td_codigo.innerHTML = codigo++;
+        td_aluno.innerHTML = aluno;
+        td_turma.innerHTML = turma;
+      
+      tr.appendChild(td_codigo);
+      tr.appendChild(td_aluno);
+      tr.appendChild(td_turma);
+  }
+  </script>
+</body>
+</html>
