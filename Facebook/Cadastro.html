@@ -15,19 +15,18 @@
                 <h6><span style="color: rgb(163, 163, 163);">É rápido e fácil.</span></h6>
                 <br>
 
-                <label for="nome">Nome</label> 
-                <input type="text" id="nome" />
+                <input placeholder="Nome" type="text" id="nome"/>
 
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" id="sobrenome" />
+                <input placeholder="Sobrenome" type="text" id="sobrenome"/>
                 <br><br>
 
-                <label for="emailtelefone">Celular ou email</label>
-                <input type="text" id="emailtelefone" />
+                <input placeholder="Celular ou email" type="text" id="emailtelefone"/>
                 <br><br>
 
-                <label for="genero">Gênero</label>
-                <input type="text" id="genero" />
+                <input placeholder="Nova senha" type="text" id="senha"/>
+                <br><br>
+
+                <input placeholder="Gênero" type="text" id="genero"/>
                 <br>
                 <h6>
                     <cinza> 
@@ -52,13 +51,13 @@
 </body>
 <script type="text/javascript">
     function CadastroEfetuado(){
-        var nome = document.getElementById('nome').value, sobrenome = document.getElementById('sobrenome').value, emailtelefone = document.getElementById('emailtelefone').value 
-        var genero = document.getElementById('genero').value
-        if(nome == '' || sobrenome == '' || emailtelefone == '' || genero == ''){
+        var nome = document.getElementById('nome').value, sobrenome = document.getElementById('sobrenome').value, emailtelefone = document.getElementById('emailtelefone').value;
+        var genero = document.getElementById('genero').value, senha = document.getElementById('senha').value;
+        if(nome == '' || sobrenome == '' || emailtelefone == '' || genero == '' || senha == ''){
             alert("Preencha os campos de cadastro anteriores para prosseguir.");
             return;
         }
-        alert("Nome: " + nome + " " + sobrenome + "\nE-mail ou telefone: " + emailtelefone + "\nGênero: " + genero + "\nO Cadastro foi concluido");
+        alert("Nome: " + nome + " " + sobrenome + "\nE-mail ou telefone: " + emailtelefone + "\nSenha: " + senha + "\nGênero: " + genero + "\nO Cadastro foi concluido");
     }
 </script>
 </html>
