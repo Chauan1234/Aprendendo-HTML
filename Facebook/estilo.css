@@ -7,3 +7,7 @@ termos {
 cinza, p {
   color: rgb(163, 163, 163)
 }
+html {
+  font-size: 15px;
+  font-family: "Roboto";
+}
