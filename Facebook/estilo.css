@@ -58,9 +58,26 @@ body {
   width: 332px;
   height: 22px;
 }
+.imagem-olho-visivel {
+  position: relative;
+  display: none;
+  width: 8%;
+  top: -36px;
+  left: 155px;
+}
+.imagem-olho-oculto {
+  position: relative;
+  display: block;
+  width: 7%;
+  top: -36px;
+  left: 155px;
+}
 .linkTexto {
   color: #1877f2;
   font-size: 14px;
+  position: relative;
+  bottom: 5px;
+  top: -12px;
   font-weight: 500;
   text-decoration: none;
 }
@@ -90,26 +107,19 @@ body {
   background-color: #42b72a;
   color: #fff;
 }
-.ou-divisor {
-  position: relative;
-  margin: 20px 0;
-  text-align: center;
-}
-.ou-divisor:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-left: 10px;
-  width: 95%;
-  
+.linha-cinza {
+  border: none;
   height: 1px;
   background-color: #ccc;
+  width: 95%;
+  margin-top: 2%;
+  margin-bottom: 6%;
 }
 .ou-texto {
   display: inline-block;
   color: #96999e;
   background-color: #fff;
+  bottom: 9px;
   padding: 0 10px;
   position: relative;
   z-index: 0;
@@ -161,7 +171,7 @@ PARTE CADASTRO
   color: #606770;
   font-weight: normal;
 }
-.linha-cinza {
+.linha-cinza-c {
   border: none;
   height: 1px;
   background-color: #ccc;
