@@ -8,35 +8,60 @@
 </head>
 <body>
     <div align="center">
-        <h1><principal>facebook</principal></h1>
+        <img class="titulo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
         <form>
-            <fieldset>
-                Entrar no Facebook
-                    <br><br>
-                    <input placeholder="Email ou telefone" type="text" id="emailtelefone" />
-                    <br><br>
-                    
-                    <input placeholder="Senha" type="text" id="senha" />
-                    <br><br>
-                    
-                <input type="button" value="Entrar" style="background-color: dodgerblue; color: white;" onclick="Login()" /><br>
+            <fieldset class="borda">
+                <br>
+                <div class="texto">
+                    Entrar no Facebook
+                </div>
 
-                <h5><a href="EsqueceuConta.html"><termos>Esqueceu a conta?</termos></a></h5>
-                <h5><cinza>------------------------------------------ ou ------------------------------------------</cinza></h5>
-                <input type="button" value="Criar nova conta" style="background-color: rgb(116, 192, 40); color: white;" onclick="NovaConta()" />
+                <br>
+                <input placeholder="Email ou telefone" class="arredondar" type="text" id="emailtelefone" />
+                <br><br>
+                    
+                <input placeholder="Senha" class="arredondar" type="password" id="senha" />
+                <br><br>
+                    
+                <input type="button" class="botaoLogin padraoBotao" value="Entrar" onclick="Login()" /><br>
+                <p id="mensagem-erro" style="color: red;"></p>
+                <br>
+
+                <a href="EsqueceuConta.html" class="linkTexto">Esqueceu a conta?</a>
+
+                <div class="ou-divisor">
+                    <span class="ou-texto">ou</span>
+                </div>
+                
+                <div id="mensagem-sucesso"></div>
+
+                <input type="button" class="botaoCadastro padraoBotao" value="Criar nova conta" onclick="NovaConta()" />
             </fieldset>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 <script type="text/javascript">
     function Login(){
-        var senha = document.getElementById('senha').value;
-        var emailtelefone = document.getElementById('emailtelefone').value;
-        if(senha == '' && emailtelefone == '' || senha == '' || emailtelefone == ''){
-            alert('Preencha todos os campos anteriores para prosseguir com o login');
-            return;
+        var senha = document.getElementById('senha'), emailtelefone = document.getElementById('emailtelefone');
+        var mensagemErro = document.getElementById('mensagem-erro'), mensagemSucesso = document.getElementById('mensagem-sucesso');
+        if(senha.value == '' || emailtelefone.value == '') {
+            mensagemErro.textContent = 'Você deve preencher todos os campos antes de prosseguir.';
+            if(senha.value == '') {
+                senha.style.border = '1px solid red';
+            } else {
+                senha.style.border = '1px solid #ccc';
+            }
+            if(emailtelefone.value == '') {
+                emailtelefone.style.border = '1px solid red';
+            } else {
+                emailtelefone.style.border = '1px solid #ccc';
+            }
+        } else {
+            senha.style.border = '1px solid #ccc';
+            emailtelefone.style.border = '1px solid #ccc';
+            mensagemSucesso.style.display = 'block';
+            mensagemSucesso.textContent = "O Login foi realizado com sucesso!";
         }
-        alert('E-mail/Telefone: ' + emailtelefone + '\nSenha: ' + senha + '\nO login foi concluido');
     }
     function NovaConta(){
         window.location.href = "Cadastro.html";
