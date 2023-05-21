@@ -21,18 +21,17 @@
                 <br><br>
                     
                 <input placeholder="Senha" class="arredondar" type="password" id="senha" />
-                <br><br>
+                <img id="imagem-olho-visivel" class="imagem-olho-visivel" src="img/olho-visível.png" onclick="mostrarOcultarSenha()">
+                <img id="imagem-olho-oculto" class="imagem-olho-oculto" src="img/olho-oculto.png" onclick="mostrarOcultarSenha()">
                     
-                <input type="button" class="botaoLogin padraoBotao" value="Entrar" onclick="Login()" /><br>
+                <input type="button" class="botaoLogin padraoBotao" value="Entrar" onclick="Login()" />
                 <p id="mensagem-erro" style="color: red;"></p>
                 <br>
 
                 <a href="EsqueceuConta.html" class="linkTexto">Esqueceu a conta?</a>
 
-                <div class="ou-divisor">
-                    <span class="ou-texto">ou</span>
-                </div>
-                
+                <div class="linha-cinza"></div><span class="ou-texto">ou</span>
+                <br><br>
                 <div id="mensagem-sucesso"></div>
 
                 <input type="button" class="botaoCadastro padraoBotao" value="Criar nova conta" onclick="NovaConta()" />
@@ -65,6 +64,19 @@
     }
     function NovaConta(){
         window.location.href = "Cadastro.html";
+    }
+    function mostrarOcultarSenha(){
+        var senha = document.getElementById('senha'), imagemOlhoVisivel = document.getElementById('imagem-olho-visivel'); 
+        var imagemOlhoOculto = document.getElementById('imagem-olho-oculto');
+        if(senha.type == 'password') {
+            senha.type = 'text';
+            imagemOlhoVisivel.style.display = 'block';
+            imagemOlhoOculto.style.display = 'none';
+        } else {
+            senha.type = 'password';
+            imagemOlhoVisivel.style.display = 'none';
+            imagemOlhoOculto.style.display = 'block';
+        }
     }
 </script>
 </html>
