@@ -1,3 +1,8 @@
+/*
+PARTE GLOBAL
+PARTE GLOBAL
+PARTE GLOBAL
+*/
 principal {
   color: dodgerblue;
   }
@@ -7,7 +12,208 @@ termos {
 cinza, p {
   color: rgb(163, 163, 163)
 }
+
 html {
   font-size: 15px;
   font-family: "Roboto";
+}
+/*
+PARTE LOGIN
+PARTE LOGIN
+PARTE LOGIN
+*/
+body {
+  background: #f0f2f5;
+  background-color: #f0f2f5;
+  padding: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.34;
+  font-size: 12px;
+}
+
+.titulo {
+  margin: -44px 0 -4px 0;
+  width: 240px;
+}
+.borda {
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 2px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  margin: auto;
+  padding: 0 0 14px 0;
+  width: 396px;
+}
+.texto {
+  color: #1c1e21;
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.arredondar {
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  width: 332px;
+  height: 22px;
+}
+.linkTexto {
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.linkTexto:hover {
+  text-decoration: underline;
+}
+.padraoBotao {
+  box-sizing: content-box;
+  font-weight: bold;
+}
+.botaoLogin {
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+  background-color: #1877f2;
+  color: #fff;
+}
+.botaoCadastro {
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #42b72a;
+  color: #fff;
+}
+.ou-divisor {
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+.ou-divisor:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 10px;
+  width: 95%;
+  
+  height: 1px;
+  background-color: #ccc;
+}
+.ou-texto {
+  display: inline-block;
+  color: #96999e;
+  background-color: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 0;
+}
+#mensagem-sucesso {
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  display: none;
+  width: 300px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  color: #1877f2;
+  line-height: 150px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*
+PARTE CADASTRO
+PARTE CADASTRO
+PARTE CADASTRO
+*/
+.titulo-c {
+  height: 100px;
+  padding-top: 5px;
+}
+.borda-c {
+  border-radius: 8px;
+  border: 1px solid #dddfe2;
+  background-color: #fff;
+  box-shadow: 0 2px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  padding-top: 5px;
+  padding: 0 20px 0 0;
+  display: block;
+  font-size: 12px;
+  line-height: 1.34;
+  width: 420px;
+}
+.textoTitulo-c {
+  font-size: 25px;
+  margin-top: 10px;
+  color: #333;
+  font-weight: 600;
+}
+.texto-c {
+  font-size: 15px;
+  line-height: 24px;
+  color: #606770;
+  font-weight: normal;
+}
+.linha-cinza {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  width: 105%;
+  margin-top: 3%;
+}
+.arredondar-c {
+  width: 170px;
+  padding: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  border-radius: 5px;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid #ccd0d5;
+  margin-bottom: 10px;
+}
+.espaçamento {
+  margin-left: 16px;
+}
+.espaçamento2 {
+  margin-left: 8px;
+}
+.arredondar2-c {
+  padding: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  border-color: #ccd0d5;
+  width: 375px;
+  border-radius: 5px;
+  margin-left: 15px;
+  background-color: transparent;
+  position: relative;
+  border: 1px solid #ccd0d5;
+}
+.nascimento {
+  border-radius: 4px;
+  color:#1c1e21;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  height: 36px;
+  line-height: 20px;
+  background-image: url(/rsrc.php/v3/yP/r/Yrq8Y9PlN02.png);
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  padding: 0 8px;
+  padding-right: 20px;
+  width: 1125px;
+  background-color: #fff;
+  border: 1px solid #ccd0d5;
 }
