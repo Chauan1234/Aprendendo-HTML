@@ -57,20 +57,21 @@ body {
   border: 1px solid #ccc;
   width: 332px;
   height: 22px;
+  top: -10px;
 }
 .imagem-olho-visivel {
   position: relative;
   display: none;
-  width: 8%;
-  top: -36px;
-  left: 155px;
+  width: 6%;
+  top: -33px;
+  left: 160px;
 }
 .imagem-olho-oculto {
   position: relative;
-  display: block;
-  width: 7%;
-  top: -36px;
-  left: 155px;
+  display: none;
+  width: 5.5%;
+  top: -33px;
+  left: 160px;
 }
 .linkTexto {
   color: #1877f2;
@@ -87,32 +88,28 @@ body {
 .padraoBotao {
   box-sizing: content-box;
   font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  line-height: 48px;
+  padding: 0 16px;
+  color: #fff;
 }
 .botaoLogin {
-  border: none;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 48px;
-  padding: 0 16px;
   width: 332px;
   background-color: #1877f2;
-  color: #fff;
 }
 .botaoCadastro {
-  border: none;
-  border-radius: 6px;
   font-size: 17px;
-  line-height: 48px;
-  padding: 0 16px;
   background-color: #42b72a;
-  color: #fff;
 }
 .linha-cinza {
   border: none;
+  position: relative;
   height: 1px;
   background-color: #ccc;
   width: 95%;
-  margin-top: 2%;
+  top: 4px;
   margin-bottom: 6%;
 }
 .ou-texto {
