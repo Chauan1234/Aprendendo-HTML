@@ -68,7 +68,7 @@ body {
 }
 .imagem-olho-oculto {
   position: relative;
-  display: none;
+  display: block;
   width: 5.5%;
   top: -33px;
   left: 160px;
