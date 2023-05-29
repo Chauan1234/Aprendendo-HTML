@@ -31,7 +31,11 @@
                 <a href="EsqueceuConta.html" class="linkTexto">Esqueceu a conta?</a>
 
                 <div class="linha-cinza"><span class="ou-texto">ou</span></div>
-                <div id="mensagem-sucesso"></div>
+                <div id="mensagem-sucesso">
+                    <p class="título-sucesso" id="título-sucesso">Sucesso!</p>
+                    <p class="texto-sucesso" id="texto-sucesso">Log-in efetuado com sucesso.</p>
+                    <button class="botão-sucesso" type="reset" onclick="reset()">OK</button>
+                </div>
 
                 <input type="button" class="botaoCadastro padraoBotao" value="Criar nova conta" onclick="NovaConta()" />
             </fieldset>
@@ -55,10 +59,11 @@
                 emailtelefone.style.border = '1px solid #ccc';
             }
         } else {
+            
             senha.style.border = '1px solid #ccc';
             emailtelefone.style.border = '1px solid #ccc';
             mensagemSucesso.style.display = 'block';
-            mensagemSucesso.textContent = "O Login foi realizado com sucesso!";
+            mensagemSucesso.textContent = título-sucesso, texto-sucesso;
         }
     }
     function NovaConta(){
@@ -76,6 +81,10 @@
             imagemOlhoVisivel.style.display = 'none';
             imagemOlhoOculto.style.display = 'block';
         }
+    } function reset() {
+        var mensagemSucesso = document.getElementById('mensagem-sucesso');
+        location.reload();
+        mensagemSucesso.style.display = 'none';
     }
 </script>
 </html>
