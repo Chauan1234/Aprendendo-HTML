@@ -59,6 +59,10 @@ body {
   height: 22px;
   top: -10px;
 }
+.arredondar:focus {
+  border: 1px solid #ccc;
+  outline: initial;
+}
 .imagem-olho-visivel {
   position: relative;
   display: none;
@@ -122,18 +126,42 @@ body {
   z-index: 0;
 }
 #mensagem-sucesso {
-  border-radius: 10px;
-  border: 2px solid rgb(0, 0, 0);
   display: none;
+  background-image: url('img/imagem-correto.png');
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 120px 15px;
+  border-radius: 5px;
+  border: 2px solid rgb(216, 216, 216);
   width: 300px;
-  height: 150px;
+  height: 200px;
   background-color: rgb(255, 255, 255);
-  color: #1877f2;
   line-height: 150px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.título-sucesso {
+  font-size: 16px;
+  color: black;
+  font-weight: 550;
+}
+.texto-sucesso {
+  position: relative;
+  top: -127px;
+  color: rgb(95, 95, 95);
+  font-size: 12px;
+}
+.botão-sucesso {
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  height: 25px;
+  width: 35px;
+  background-color: #1877f2;
+  position: relative;
+  top: -250px;
 }
 /*
 PARTE CADASTRO
